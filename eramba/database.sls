@@ -4,7 +4,6 @@
     - user: root
     - group: root
     - mode: 644
-    - require:
     - template: jinja
     - defaults:
         datasource: {{ salt['pillar.get']('eramba:db:datasource', 'Database/Mysql') }}
@@ -14,3 +13,5 @@
         password: {{ salt['pillar.get']('eramba:db:password', '') }}
         database: {{ salt['pillar.get']('eramba:db:database', 'eramba') }}
         prefix: {{ salt['pillar.get']('eramba:db:prefix', '') }}
+
+# TODO: Check if db exits. If not create it

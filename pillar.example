@@ -1,6 +1,25 @@
 eramba:
+  domain: http://my.eramba.com
   file: eramba_v2.zip
   source: http://www.eramba.org/
   source_hash: md5sum=129623563b4dff5e576e6c7285a1e7da
   path: /var/www/
+  db:
+    datasource: 'Database/Mysql'
+    persistent: 'false'
+    host: 'localhost'
+    login: 'eramba'
+    password: 'eramba'
+    database: 'eramba'
+    prefix: ''
+  cron:
+    security_key: 'randomstring'
+    daily:
+      - '/awareness/runCron'
+      - '/businessContinuityPlans/runCron'
+      - '/mailer/run'
+      - '/policyExceptions/checkPolicyException'
+      - '/reports/updateOvertimeCharts'
+    yearly:
+      - '/securityServices/updateAudits'
   webserver: apache

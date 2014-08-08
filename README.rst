@@ -20,6 +20,16 @@ Available states
 
 Installs the eramba package.
 
+``eramba.database``
+------------
+
+Configure database settings.
+
+``eramba.cron``
+------------
+
+Sets up cron.
+
 This formula depend on the following formulas:
 
 * `php <https://github.com/saltstack-formulas/php-formula>`_

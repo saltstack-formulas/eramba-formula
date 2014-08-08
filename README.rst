@@ -41,6 +41,7 @@ Sets up cron.
 This formula depend on the following formulas:
 
 * `php <https://github.com/saltstack-formulas/php-formula>`_
+* `mysql <https://github.com/saltstack-formulas/mysql-formula>`_
 
 * `apache <https://github.com/saltstack-formulas/apache-formula>`_
 or

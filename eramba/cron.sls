@@ -9,6 +9,7 @@
 
 /var/tmp/eramba/{{ day }}:
   cron.present:
+    - identifier: {{ day }}
     - name: wget {{ salt['pillar.get']('eramba:domain') }}{{ day }}/{{ salt['pillar.get']('eramba:cron:security_key') }}
     - user: www-data
     - hour: 01
@@ -19,6 +20,7 @@
 
 /var/tmp/eramba/{{ year }}:
   cron.present:
+    - identifier: {{ year }}
     - name: wget {{ salt['pillar.get']('eramba:domain') }}{{ year }}/{{ salt['pillar.get']('eramba:cron:security_key') }}
     - user: www-data
     - month: 01

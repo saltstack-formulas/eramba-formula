@@ -2,7 +2,13 @@
 eramba-formula
 ================
 
-Downloads and installs
+Downloads and installs eramba.
+
+>eramba is an open-source, web-application and framework
+>(largely based on ISO/IEC 27001, 9001, 22301, ITIL, CoBIT and real life experience)
+>aimed to help security managers, consultants and officers with: risk,
+>compliance, audits, awareness, controls catalogues, budgets, efficiencies,
+>continuity plans, exception management, awareness and project management.
 
 .. note::
 
@@ -36,4 +42,5 @@ This formula depend on the following formulas:
 
 * `apache <https://github.com/saltstack-formulas/apache-formula>`_
 or
+
 * `nginx <https://github.com/saltstack-formulas/nginx-formula>`_

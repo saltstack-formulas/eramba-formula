@@ -4,6 +4,7 @@ eramba:
   source: http://www.eramba.org/
   source_hash: md5sum=129623563b4dff5e576e6c7285a1e7da
   path: /var/www/
+  folder: eramba_v2
   db:
     datasource: 'Database/Mysql'
     persistent: 'false'

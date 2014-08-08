@@ -1,4 +1,4 @@
-{{ salt['pillar.get']('eramba:path') }}/app/Config/database.php:
+{{ salt['pillar.get']('eramba:path') }}{{ salt['pillar.get']('eramba:folder') }}/app/Config/database.php:
   file.managed:
     - source: salt://eramba/files/database.php
     - user: root

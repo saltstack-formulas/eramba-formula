@@ -1,9 +1,8 @@
 ================
-template-formula
+eramba-formula
 ================
 
-A saltstack formula that is empty. It has dummy content to help with a quick
-start on a new formula.
+Downloads and installs
 
 .. note::
 
@@ -16,7 +15,15 @@ Available states
 .. contents::
     :local:
 
-``template``
+``eramba``
 ------------
 
-Installs the template package, and starts the associated template service.
+Installs the eramba package.
+
+This formula depend on the following formulas:
+
+* `php <https://github.com/saltstack-formulas/php-formula>`_
+
+* `apache <https://github.com/saltstack-formulas/apache-formula>`_
+or
+* `nginx <https://github.com/saltstack-formulas/nginx-formula>`_

@@ -6,11 +6,11 @@ Downloads and installs eramba.
 
 http://www.eramba.org/
 
->   eramba is an open-source, web-application and framework
->   (largely based on ISO/IEC 27001, 9001, 22301, ITIL, CoBIT and real life experience)
->   aimed to help security managers, consultants and officers with: risk,
->   compliance, audits, awareness, controls catalogues, budgets, efficiencies,
->   continuity plans, exception management, awareness and project management.
+eramba is an open-source, web-application and framework
+(largely based on ISO/IEC 27001, 9001, 22301, ITIL, CoBIT and real life experience)
+aimed to help security managers, consultants and officers with: risk,
+compliance, audits, awareness, controls catalogues, budgets, efficiencies,
+continuity plans, exception management, awareness and project management.
 
 .. note::
 
@@ -38,12 +38,9 @@ Configure database settings.
 
 Sets up cron.
 
-This formula depend on the following formulas:
+Formula Dependencies
 
 * `php <https://github.com/saltstack-formulas/php-formula>`_
 * `mysql <https://github.com/saltstack-formulas/mysql-formula>`_
 
-* `apache <https://github.com/saltstack-formulas/apache-formula>`_
-or
-
-* `nginx <https://github.com/saltstack-formulas/nginx-formula>`_
+* `apache <https://github.com/saltstack-formulas/apache-formula>`_ or `nginx <https://github.com/saltstack-formulas/nginx-formula>`_

@@ -39,6 +39,7 @@ Configure database settings.
 Sets up cron.
 
 Formula Dependencies
+====================
 
 * `php <https://github.com/saltstack-formulas/php-formula>`_
 * `mysql <https://github.com/saltstack-formulas/mysql-formula>`_
